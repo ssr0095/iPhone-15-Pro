@@ -13,6 +13,7 @@ export default defineConfig({
       release: {
         name: "i15v.0.1",
       },
+       telemetry: false,
     }),
   ],
 
