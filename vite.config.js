@@ -1,4 +1,4 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
+// import { sentryVitePlugin } from "@sentry/vite-plugin";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -6,15 +6,15 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [
     react(),
-    sentryVitePlugin({
-      authToken: "process.env.SENTRY_AUTH_TOKEN",
-      org: "Apple-iPhone",
-      project: "iPhone-15-Pro",
-      release: {
-        name: "i15v.0.1",
-      },
-       telemetry: false,
-    }),
+    // sentryVitePlugin({
+    //   authToken: "process.env.SENTRY_AUTH_TOKEN",
+    //   org: "Apple-iPhone",
+    //   project: "iPhone-15-Pro",
+    //   release: {
+    //     name: "i15v.0.1",
+    //   },
+    //   telemetry: false,
+    // }),
   ],
 
   server: {
